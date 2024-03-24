@@ -5,6 +5,8 @@
 }
 body{
     background-color: #EF1313;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 100; */
 }
 .header{
     align-items: center;
@@ -37,7 +39,7 @@ img{
 .lowerDiv{
     display: flex;
     justify-content: space-around;
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 100%;
     text-align: center;
 }
@@ -78,4 +80,14 @@ input:focus{
 #inputBoxes *{
     width: 40%;
     height: 35px;
+}
+
+.hp{
+    text-align: end;
+    /* border: 1px solid red; */
+    margin-left: 70%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: white;
 }

@@ -59,7 +59,7 @@ const showCards = (pok) => {
       <p class="hp">HP <span>${ele.stats[0].base_stat}</span></p>
       <img src="${ele.sprites.other.dream_world.front_default}"/>
       <h1>${pokName}</h1>
-      <p>${type}</p>
+      <p style="text-transform:capitalize; background-color: ${typeColor[type]}; padding: 5px; border-radius: 5px">${type}</p>
 
       <div class="lowerDiv">
         <div>
@@ -77,8 +77,7 @@ const showCards = (pok) => {
       </div>
       `;
 
-    let theme = ele.types[0].type.name;
-    div.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[theme]} 36%, #ffffff 36%)`;
+    div.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[type]} 36%, #ffffff 36%)`;
 
     container.appendChild(div);
   });
