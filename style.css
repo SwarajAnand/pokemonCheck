@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+body{
+    background-color: #EF1313;
+}
+.header{
+    align-items: center;
+    text-align: center;
+}
+#pokemonLogo{
+    height: 200px;
+    width: 400px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    justify-content: space-evenly;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
+
+.pokemonContainer:hover{
+    img{
+        transform: scale(1.25);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.lowerDiv{
+    display: flex;
+    justify-content: space-around;
+    border:1px solid red;
+    width: 100%;
+    text-align: center;
+}
+
+.pokemonContainer{
+    align-items:center;
+    /* border:1px solid red; */
+    position: relative;
+    /* width: 230px; */
+    width: 235px;
+    height: 350px;
+    /* padding: 15px 10px 20px; */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#inputBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    text-align: center;
+}
+input{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+#inputBoxes *{
+    width: 40%;
+    height: 35px;
+}
