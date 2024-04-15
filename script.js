@@ -1,4 +1,4 @@
-console.log("woring");
+console.log("working");
 const Api = "https://pokeapi.co/api/v2/pokemon/";
 const container = document.getElementById("container");
 const selectVals = document.getElementById("selectVals");
@@ -112,6 +112,7 @@ const showData = (val) => {
 
 pokemonName.addEventListener("input", () => {
   let value = pokemonName.value;
+  value = value.toLowerCase();
   let filteredArr = pokArr.filter((ele) => {
     return ele.name.includes(value);
   });
@@ -121,29 +122,29 @@ pokemonName.addEventListener("input", () => {
 // console.log(promises, "Wokring");
 
 // ******************* Reduce Practice ************************
-// const names = [
-//   {
-//     name: "Anchit",
-//     price: 100,
-//   },
-//   {
-//     name: "swaraj",
-//     price: 200,
-//   },
-//   {
-//     name: "swaraj",
-//     price: 100,
-//   },
-// ];
+const names = [
+  {
+    name: "Anchit",
+    price: 100,
+  },
+  {
+    name: "swaraj",
+    price: 200,
+  },
+  {
+    name: "swaraj",
+    price: 100,
+  },
+];
 
-// let obj = names.reduce((acc, curr) => {
-//   if (acc[curr.name] == undefined) {
-//     acc[curr.name] = curr.price;
-//   } else {
-//     acc[curr.name] += curr.price;
-//   }
-//   return acc;
-// }, {});
+let obj = names.reduce((acc, curr) => {
+  if (acc[curr.name] == undefined) {
+    acc[curr.name] = curr.price;
+  } else {
+    acc[curr.name] += curr.price;
+  }
+  return acc;
+}, {});
 
 // console.log(obj);
 
